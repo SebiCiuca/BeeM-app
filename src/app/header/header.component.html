@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">BeeM</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggle()"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNavAltMarkup"
+      [ngbCollapse]="isCollapsed"     
+    >
+      <div class="navbar-nav">
+        <a class="nav-link" routerLinkActive="active" routerLink="/">Dashboard</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/clients">Clients</a>     
+        <a class="nav-link "  routerLinkActive="active" routerLink="/login">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>

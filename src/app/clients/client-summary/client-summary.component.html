@@ -1,0 +1,12 @@
+<div class="row" (click)="onEdit()"> 
+    <div class="col-5">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ client.name }}</h4>
+        <p class="list-group-item-text">{{ client.email }}</p>
+      </div>
+    </div>
+    <div class="col-7">
+      <button class="btn btn-danger pull-right" (click)="onDelete()">Delete</button>
+      <ng-content class="pull-right"></ng-content>
+    </div>
+</div>

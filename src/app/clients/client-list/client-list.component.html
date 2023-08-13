@@ -1,0 +1,14 @@
+<hr/>
+<div class="row">
+  <div class="col">     
+       <app-client-summary *ngFor="let client of clients" 
+       [clientSummary]="client" 
+       (clientDeleted)="onClientDeleted(client)" 
+       (clientEdited)="onClientEdited(client)">
+        <button class="btn btn-primary pull-right" (click)="viewClient(client)">View</button>
+      </app-client-summary>
+  </div>
+  <div class="col">
+      <router-outlet></router-outlet>      
+  </div>
+</div>
